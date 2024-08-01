@@ -1,0 +1,48 @@
+#root {
+  position: relative;
+  top: 0;
+  max-width: 100dvw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background: top center repeat url(./assets/backgroundImage.png);
+  background-size: cover;
+  overflow: hidden;
+
+  .backgroundBlur {
+    position: absolute;
+    background-color: color-mix(in srgb, var(--red-theme) 30%, transparent);
+    filter: blur(200px);
+    border-radius: 100%;
+    width: 40rem;
+    height: 70rem;
+  }
+}
+
+.leftBlur {
+  top: -25rem;
+  left: -5rem;
+  transform: rotate(-61deg);
+}
+
+.rightBlur {
+  top: 0rem;
+  right: -5rem;
+  transform: rotate(61deg);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
