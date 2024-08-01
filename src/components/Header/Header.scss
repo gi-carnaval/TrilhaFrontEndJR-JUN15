@@ -1,0 +1,18 @@
+header {
+  height: 5.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75dvw;
+
+  nav {
+    display: flex;
+    gap: 1.25rem;
+
+    a:hover {
+      color: var(--red-theme);
+      text-decoration: underline;
+      transition: 500ms
+    }
+  }
+}
