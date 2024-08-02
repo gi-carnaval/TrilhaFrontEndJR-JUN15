@@ -1,0 +1,49 @@
+.personalTastes {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+  gap: 2rem;
+
+  .cardsContainer {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .personalTastes {
+    .cardsContainer {
+      display: flex;
+      grid-template-columns: none;
+      grid-template-rows: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 2rem;
+    }
+  }
+}
+
+@media only screen and (device-width: 768px) {
+  .personalTastes {
+    .cardsContainer {
+      grid-template-columns: auto auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 0 10%;
+    }
+
+    .sectionTitle {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+}
