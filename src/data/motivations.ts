@@ -1,0 +1,7 @@
+export const motivationStatements = [
+  "O que despertou meu interesse na comunidade Codigo Certo Coders foi a possibilidade de contribuir com uma comunidade enquanto aprendo e ensino ao mesmo tempo. Acredito que esse ambiente colaborativo é fundamental para o crescimento de todos os envolvidos.",
+  "Meus objetivos ao entrar nessa comunidade são ganhar experiência profissional, trabalhar em equipe e contribuir com os projetos da comunidade. Estou certo de que participar da Codigo Certo Coders contribuirá significativamente para o meu crescimento pessoal e profissional, pois poderei aplicar meus conhecimentos e ao mesmo tempo aprender com outros desenvolvedores.",
+  "Tenho experiência anterior em comunidades de desenvolvedores, tendo trabalhado no projeto RS-SOS, um projeto open source focado em ajudar a comunidade do Rio Grande do Sul atingida pelas enchentes. Foi uma experiência enriquecedora que me mostrou a importância e o impacto do trabalho colaborativo.",
+  "Espero desenvolver e aprimorar habilidades como trabalho em equipe, desenvolvimento de projetos com outros desenvolvedores e, quem sabe, liderança dentro da comunidade. Pretendo contribuir desempenhando o papel de desenvolvedor frontend, além de colaborar com desenvolvedores backend, uma vez que também possuo conhecimento nessa área.",
+  "Estou ansioso para fazer parte da comunidade Codigo Certo Coders e contribuir para o crescimento e sucesso dos projetos que desenvolvemos juntos."
+];
