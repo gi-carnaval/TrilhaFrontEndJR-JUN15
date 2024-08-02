@@ -1,5 +1,5 @@
 import { personalInterests } from "../../data/personalInterests"
-import PersonalTastesSectionCard from "../PersonalTastesSectionCard/PersonalTastesSectionCard"
+import PersonalTastesSectionCard from "../PersonalTastesSectionCard"
 import SectionTitle from "../SectionTitle"
 import "./PersonalTastesSection.scss"
 
