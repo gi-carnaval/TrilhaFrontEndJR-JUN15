@@ -8,19 +8,31 @@ import Paragraph from "../Paragraph"
 
 export default function Hero() {
 
+  function calcAge() {
+    const birthday = +new Date('01/04/2002');
+    return ~~((Date.now() - birthday) / (31557600000));
+  }
+
+  function getExperienceYears() {
+    return (new Date().getFullYear() - 2020)
+  }
 
   return (
-    <div className="hero-section">
+    <div className="hero-section" id="sobre">
       <div className="text-hero">
 
         <HeroTitle />
-        <Parallax speed={10}>
-          <Fade duration={1000}>
-            <Slide direction="up" fraction={0.01} triggerOnce>
+        <Parallax speed={10} >
+          <Fade duration={1000} triggerOnce>
+            <Slide direction="up" triggerOnce>
               <Paragraph>
-                Sou um desenvolvedor Frontend de 22 anos com mais de 4 anos de experiência em desenvolvimento de websites e sistemas web.
-                Focado em ReactJS e NextJS, criando interfaces de usuário responsivas e intuitivas.
-                Tenho um forte foco em desempenho e otimização contínua das aplicações.
+                {`
+                  Sou um desenvolvedor Frontend de ${calcAge()} anos com mais de ${getExperienceYears()} anos de experiência em desenvolvimento de websites e sistemas web.
+                  Focado em ReactJS e NextJS, criando interfaces de usuário responsivas e intuitivas.
+                  Tenho um forte foco em desempenho e otimização contínua das aplicações.
+                `
+                }
+
               </Paragraph>
               <Paragraph>
                 Estou sempre buscando novos desafios que me permitam aprender e exercitar minhas habilidades e conhecimentos em tecnologia.
