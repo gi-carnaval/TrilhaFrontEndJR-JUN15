@@ -9,7 +9,7 @@ export default function HeroTitle({...rest}: React.HTMLAttributes<HTMLHeadingEle
       </ Fade>
       <span className="titleName">
         <Fade cascade delay={1e3} damping={0.05}>
-          Giovani Carnaval 👋
+          Giovani Carnaval
         </Fade>
       </span>
     </h1>
