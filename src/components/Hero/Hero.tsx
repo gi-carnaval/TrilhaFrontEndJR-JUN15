@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="text-hero">
 
         <HeroTitle />
-        <Parallax speed={10} >
+        <Parallax speed={0} >
           <Slide direction="up" triggerOnce>
             <Paragraph>
               {`
@@ -41,7 +41,7 @@ export default function Hero() {
         </Parallax>
       </div>
       <div className="image-hero">
-        <Slide direction="right" >
+        <Slide direction="right" triggerOnce>
           <Parallax speed={-10}>
             <a href="https://www.instagram.com/giovani_carnaval/" target="blank" title="Acessar meu instagram">
               <img className="profile-1 profileImg" src={giovaniProfileTwo} alt="" />
