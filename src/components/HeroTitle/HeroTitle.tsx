@@ -1,9 +1,9 @@
 import { Fade } from "react-awesome-reveal";
 import "./HeroTitle.scss"
 
-export default function HeroTitle() {
+export default function HeroTitle({...rest}: React.HTMLAttributes<HTMLHeadingElement>) {
   return (
-    <h1 className="heroTitle">
+    <h1 className="heroTitle" {...rest}>
       <Fade cascade delay={0} damping={0.05}>
         Opa, tudo bem? Sou o
       </ Fade>
