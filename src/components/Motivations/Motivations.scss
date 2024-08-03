@@ -1,21 +1,73 @@
 .motivationSection {
+  width: 100%;
   box-sizing: border-box;
   padding: 0 10%;
-  margin-bottom: 5rem;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  scroll-snap-align: start;
 
   .motivationCard {
     box-sizing: border-box;
     padding: 2rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 0.75rem;
     backdrop-filter: blur(50px);
+    overflow: hidden;
+    position: relative;
 
-    p {
-      text-align: left;
+    .motivationCardTexts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .motivationCardTextsParagraphs {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        p {
+          margin: 0;
+          text-align: left;
+        }
+      }
     }
   }
+
+  .imgProfile2 {
+    width: 25rem;
+    height: min-content;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .motivationSection {
+    .motivationCard {
+      flex-direction: column;
+      padding: 1rem;
+
+      .imgProfile2 {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (device-width: 768px) {
+
+  .motivationSection {
+    .motivationCard {
+      flex-direction: column;
+      padding: 1rem;
+
+      .imgProfile2 {
+        width: 100%;
+      }
+    }
+  }
+
 }
