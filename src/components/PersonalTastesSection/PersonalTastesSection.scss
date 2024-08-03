@@ -6,6 +6,7 @@
   align-items: center;
   padding-bottom: 5rem;
   gap: 2rem;
+  scroll-snap-align: start;
 
   .cardsContainer {
     box-sizing: border-box;
