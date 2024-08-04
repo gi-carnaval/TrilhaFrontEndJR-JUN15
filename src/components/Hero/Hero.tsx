@@ -2,7 +2,7 @@ import "./Hero.scss"
 
 import giovaniProfileTwo from '../../assets/giovani-2.png'
 import { Parallax } from "react-scroll-parallax"
-import { Slide } from "react-awesome-reveal"
+import { Fade, Slide } from "react-awesome-reveal"
 import HeroTitle from "../HeroTitle"
 import Paragraph from "../Paragraph"
 
@@ -41,13 +41,13 @@ export default function Hero() {
         </Parallax>
       </div>
       <div className="image-hero">
-        <Slide direction="right" triggerOnce>
+        <Fade direction="up" triggerOnce>
           <Parallax speed={-10}>
             <a href="https://www.instagram.com/giovani_carnaval/" target="blank" title="Acessar meu instagram">
               <img className="profile-1 profileImg" src={giovaniProfileTwo} alt="" />
             </a>
           </Parallax>
-        </Slide>
+        </Fade>
       </div>
     </div >
   )
